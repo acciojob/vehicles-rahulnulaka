@@ -1,6 +1,5 @@
 package com.driver;
 
-
 public class F1 extends Car {
 
 	public F1(String name, boolean isManual) {
@@ -32,7 +31,7 @@ public class F1 extends Car {
 			super.changeGear(4);
 		} else if (newSpeed >= 201 && newSpeed <= 250) {
 			super.changeGear(5);
-		} else {
+		} else if (newSpeed > 250) {
 			super.changeGear(6);
 		}
 		// for all other cases, change the gear accordingly
